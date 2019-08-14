@@ -1,0 +1,27 @@
+.area {
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.content {
+    margin: auto 15px;
+}
+
+.label {
+    margin-right: 10px;
+}
+
+.value {
+    margin-right: 20px;
+}
+
+.article p {
+    margin-top: 5px;
+}
