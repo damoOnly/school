@@ -1,0 +1,146 @@
+<html>
+
+<head>
+    <style type="text/css">
+        body {
+            position: relative;
+        }
+
+        .clearfix:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .left {
+            background-color: blueviolet;
+            height: 50px;
+        }
+
+        .right {
+            background-color: burlywood;
+            height: 50px;
+        }
+
+        .one .left {
+            width: 30%;
+        }
+
+        .one .right {
+            width: 70%;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        .two {
+            position: relative;
+        }
+
+        .two .left {
+            width: 200px;
+        }
+
+        .two .right {
+            width: calc(100% - 200px);
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .three .right {
+            width: 200px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .three .left {
+            width: calc(100% - 200px);
+        }
+
+        .three {
+            position: relative;
+        }
+
+        .four .main {
+            width: calc(100% - 400px);
+            height: 50px;
+            position: absolute;
+            left: 200px;
+            background-color: brown;
+        }
+
+        .four {
+            position: relative;
+        }
+
+        .four .left {
+            width: 200px;
+        }
+
+        .four .right {
+            width: 200px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .five {
+            position: relative;
+        }
+
+        .five .left,
+        .five .main {
+            width: 200px;
+        }
+
+        .five .main {
+            background-color: brown;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            left: 200px;
+        }
+
+        .five .right {
+            width: calc(100% - 400px);
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one clearfix">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="two clearfix">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="three clearfix">
+        <div class="left">
+            <div></div>
+        </div>
+        <div class="right"></div>
+    </div>
+    <div class="four clearfix">
+        <div class="main">
+            <div></div>
+        </div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="five clearfix">
+        <div class="left"></div>
+        <div class="main">
+            <div></div>
+        </div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <style type="text/css">
+        body {
+            position: relative;
+        }
+
+        .clearfix:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .left {
+            background-color: blueviolet;
+            height: 50px;
+        }
+
+        .right {
+            background-color: burlywood;
+            height: 50px;
+        }
+
+        .one,
+        .two,
+        .three,
+        .four,
+        .five {
+            display: flex;
+        }
+        .one .left {
+            flex-grow: 3;
+        }
+
+        .one .right {
+            flex-grow: 7;
+        }
+
+        .two .left {
+            width: 200px;
+        }
+
+        .two .right {
+            flex-grow: 1;
+        }
+
+        .three .right {
+            width: 200px;
+        }
+
+        .three .left {
+            flex-grow: 1;
+        }
+
+        .four .main {
+            flex-grow: 1;
+            background-color: brown;
+        }
+
+        .four .left {
+            width: 200px;
+        }
+
+        .four .right {
+            width: 200px;
+        }
+
+        .five .left,
+        .five .main {
+            width: 200px;
+        }
+
+        .five .main {
+            background-color: brown;
+        }
+
+        .five .right {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one clearfix">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="two clearfix">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="three clearfix">
+        <div class="left">
+            <div></div>
+        </div>
+        <div class="right"></div>
+    </div>
+    <div class="four clearfix">        
+        <div class="left"></div>
+        <div class="main">
+            <div></div>
+        </div>
+        <div class="right"></div>
+    </div>
+    <div class="five clearfix">
+        <div class="left"></div>
+        <div class="main">
+            <div></div>
+        </div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <style type="text/css">
+        .clearfix:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .left {
+            background-color: blueviolet;
+            height: 50px;
+        }
+
+        .right {
+            background-color: burlywood;
+            height: 50px;
+        }
+
+        .one .left {
+            width: 30%;
+            float: left;
+        }
+
+        .one .right {
+            width: 70%;
+            float: left;
+        }
+
+        .two .left {
+            float: left;
+            width: 200px;
+        }
+
+        .two .right {
+            display: table-cell;
+            width: 3000px;
+        }
+
+        .three .right {
+            width: 200px;
+            float: left;
+            margin-left: -200px;
+        }
+
+        .three .left {
+            width: 100%;
+            float: left;
+        }
+
+        .three .left:first-child>div {
+            margin-right: 200px;
+            height: 100%;
+        }
+
+        .four .main {
+            width: 100%;
+            float: left;
+            height: 50px;
+        }
+
+        .four .main:first-child>div {
+            background-color: brown;
+            height: 100%;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        .four .left {
+            height: 50px;
+            margin-left: -100%;
+            float: left;
+            width: 200px;
+        }
+
+        .four .right {
+            height: 50px;
+            margin-left: -200px;
+            float: left;
+            width: 200px;
+        }
+
+        .five .left,
+        .five .main {
+            float: left;
+            width: 200px;
+        }
+
+        .five .main {
+            background-color: brown;
+            height: 50px;
+        }
+
+        .five .right {
+            display: table-cell;
+            width: 3000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one clearfix">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="two clearfix">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="three clearfix">
+        <div class="left">
+            <div></div>
+        </div>
+        <div class="right"></div>
+    </div>
+    <div class="four clearfix">
+        <div class="main">
+            <div></div>
+        </div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="five clearfix">
+        <div class="left"></div>
+        <div class="main">
+            <div></div>
+        </div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>

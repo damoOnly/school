@@ -1,5 +1,6 @@
 .area {
-    overflow: auto;
+    /* overflow: auto; */
+    border: 1px solid #eaeaea;
 }
 
 h2 {
@@ -13,9 +14,11 @@ h1 {
 }
 
 .content {
-    margin: auto 15px;
-    float: left;
+    /* margin: auto 15px;
+    float: left; */
     padding-top: 10px;
+    overflow: auto;
+    margin: 0;
 }
 
 .label {
@@ -48,9 +51,15 @@ h1 {
     float: left;
     padding: 20px 10px;
     background-color: gainsboro;
-    border-bottom: #fdfbf9 solid 2px;
+    margin-right: 15px;
 }
 
 .clear {
+    clear: both;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
     clear: both;
 }
