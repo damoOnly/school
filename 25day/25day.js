@@ -10,11 +10,11 @@ function getNowTime() {
 
     var format2 = 'yyyy-MM-dd D hh:mm:ss';
     var ele2 = document.getElementById('currentTime2');
-    ele2.innerHTML = getFormatTime((new Date()), format2, 1,1); 
+    ele2.innerHTML = getFormatTime((new Date()), format2, 1, 1);
     return getNowTime;
 }
 
-function getFormatTime(date, format, type=0, is12=0) {
+function getFormatTime(date, format, type = 0, is12 = 0) {
     var year = date.getFullYear();
     var month = getDoubleNum(date.getMonth());
     var day = getDoubleNum(date.getDate());
@@ -37,7 +37,7 @@ function getFormatTime(date, format, type=0, is12=0) {
     result = result.replace(/m{2}/, minute);
     result = result.replace(/s{2}/, second);
     if (is12) {
-        result = result + (date.getHours() > 12 ? ' PM': ' AM');
+        result = result + (date.getHours() > 12 ? ' PM' : ' AM');
     }
     return result;
 }
@@ -50,25 +50,25 @@ function getWeek(date, type) {
             week = type === 0 ? '星期天' : 'Sunday';
             break;
         case 1:
-            week = type === 0 ? '星期一':'Monday';
+            week = type === 0 ? '星期一' : 'Monday';
             break;
         case 2:
-            week = type===0?'星期二':'TuesDay';
+            week = type === 0 ? '星期二' : 'TuesDay';
             break;
         case 3:
-            week = type===0?'星期三':'Wednesday';
+            week = type === 0 ? '星期三' : 'Wednesday';
             break;
         case 4:
-            week = type===0?'星期四':'Thursday';
+            week = type === 0 ? '星期四' : 'Thursday';
             break;
         case 5:
-            week = type===0?'星期五':'Friday';
+            week = type === 0 ? '星期五' : 'Friday';
             break;
         case 6:
-            week = type===0?'星期六':'Saterday';
+            week = type === 0 ? '星期六' : 'Saterday';
             break;
         default:
-            week = type===0?'星期天':'Sunday';
+            week = type === 0 ? '星期天' : 'Sunday';
             break;
     }
     return week;
@@ -118,17 +118,17 @@ function initSelect() {
         option.setAttribute('value', i);
         option.text = i;
         second.appendChild(option);
-    } 
-    
+    }
+
     var select = document.getElementsByTagName('select');
-    for(i = 0; i < select.length; i++) {
+    for (i = 0; i < select.length; i++) {
         select[i].onchange = changeCallBack;
     }
 }
 
 function calcMonthDay(year, month) {
     var isLeapYear = ((year % 400) === 0) ||
-    (((year % 100) !== 0) && ((year % 4) === 0))
+        (((year % 100) !== 0) && ((year % 4) === 0))
     var isOddMonth = month % 2 !== 0;
     var day = 30;
     if (isOddMonth) {
@@ -140,8 +140,8 @@ function calcMonthDay(year, month) {
         day = 29;
     } else if (month === 8) {
         day = 31;
-    }   
-    return day; 
+    }
+    return day;
 }
 
 function initDaySelect(year, month) {
@@ -157,7 +157,7 @@ function initDaySelect(year, month) {
     if (dayValue > 0) {
         day.value = dayValue;
     }
-    
+
 }
 
 function monthSelectedCallBack() {
@@ -191,14 +191,14 @@ function changeCallBack() {
 function getDiffTime(date1, date2) {
     var date3 = date1.getTime() - date2.getTime();
     var timespan = Math.abs(date3);
-    var days = Math.floor(timespan/(24*3600*1000));
-    var leave1=date3%(24*3600*1000);    //计算天数后剩余的毫秒数
-        var hours=Math.floor(leave1/(3600*1000));
-        //计算相差分钟数
-        var leave2=leave1%(3600*1000);        //计算小时数后剩余的毫秒数
-        var minutes=Math.floor(leave2/(60*1000));
-        //计算相差秒数
-        var leave3=leave2%(60*1000);     //计算分钟数后剩余的毫秒数
-        var seconds=Math.round(leave3/1000);
-        return { days, hours, minutes, seconds };
+    var days = Math.floor(timespan / (24 * 3600 * 1000));
+    var leave1 = date3 % (24 * 3600 * 1000);    //计算天数后剩余的毫秒数
+    var hours = Math.floor(leave1 / (3600 * 1000));
+    //计算相差分钟数
+    var leave2 = leave1 % (3600 * 1000);        //计算小时数后剩余的毫秒数
+    var minutes = Math.floor(leave2 / (60 * 1000));
+    //计算相差秒数
+    var leave3 = leave2 % (60 * 1000);     //计算分钟数后剩余的毫秒数
+    var seconds = Math.round(leave3 / 1000);
+    return { days, hours, minutes, seconds };
 }
