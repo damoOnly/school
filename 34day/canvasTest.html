@@ -1,0 +1,190 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+    </body>
+    <script type="text/javascript">
+    var canvas = document.createElement('canvas');
+    canvas.setAttribute('width', 1000);
+    canvas.setAttribute('height', 1000);
+    if (canvas.getContext) {
+        var ctx = canvas.getContext("2d");
+
+        ctx.beginPath();
+        ctx.moveTo(10, 10);
+        ctx.lineTo(50,10);
+        ctx.closePath();
+        ctx.stroke();
+        // ctx.fillStyle = "red";
+        // ctx.strokeRect
+        ctx.fillRect(10,20,50,50);
+
+        ctx.beginPath();
+        ctx.arc(30, 100, 20, 0, (Math.PI/180) * 30);
+        ctx.stroke();
+
+        ctx.font = "12px serif";
+        ctx.fillText("我爱我的祖国", 10, 140);
+        
+        // begin clock
+        ctx.translate(300, 500);
+        const radius = 200;
+        drawFace(ctx, radius);
+        drawLine(ctx, radius);
+        drawNumbers(ctx, radius);
+        setInterval(drawTime, 1000, ctx, radius);
+        // end clock
+    }
+
+    function drawFace(ctx, radius) {
+        ctx.beginPath();
+        ctx.arc(0, 0, radius, 0, 2*Math.PI);
+        ctx.stroke();
+    }
+
+    function drawLine(ctx, radius) {
+        for (var i = 0;i<60;i++) {
+            ctx.beginPath();
+            ctx.rotate(i * 6 * Math.PI/180);
+            ctx.moveTo(radius, 0);
+            if (i % 5 == 0) {
+                ctx.strokeStyle = "#333";
+                ctx.lineWidth = radius * 0.03;
+                ctx.lineTo(radius * 0.9, 0);
+            } else {
+                ctx.strokeStyle = "#999";
+                ctx.lineWidth = radius * 0.02;
+                ctx.lineTo(radius * 0.95, 0);
+            }
+            
+            ctx.stroke();
+            ctx.rotate(-i*6*Math.PI/180);
+        }
+    }
+
+    function drawNumbers(ctx, radius) {
+        ctx.font = radius * 0.1 + "px serif";
+        ctx.textBaseline = "middle";
+        ctx.textAlign = "center";
+
+        for (var i = 1; i <= 12;i++) {
+            var angle = (((i-3)*30 + 360) % 360) * Math.PI/180;
+            ctx.rotate(angle);
+            ctx.translate(radius * 0.85, 0);
+            ctx.rotate(-angle);
+            ctx.fillText(i.toString(),0,0);
+            ctx.rotate(angle);
+            ctx.translate(-radius * 0.85, 0);
+            ctx.rotate(-angle);
+        }
+    }    
+
+    function drawTime(ctx, radius) {
+        ctx.save();
+        ctx.globalCompositeOperation = "destination-out";
+        ctx.beginPath();
+        ctx.arc(0,0, radius * 0.8, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.restore();
+        var date = new Date();
+        var hour = date.getHours();
+        var minute = date.getMinutes();
+        var second = date.getSeconds();
+        hour = hour % 12;
+        hour = ((((hour-3)*30 + 360) % 360) * Math.PI/180) + 
+        (30 * (minute/60) * Math.PI/180) + 
+        (30 * (second/3600) * Math.PI/180);
+        // console.log(hour);
+        drawHand(ctx, hour, radius * 0.4, radius * 0.05, "green");
+
+        minute = ((((minute-15)*6 + 360) % 360) * Math.PI/180) + 
+        (6 * (second/60) * Math.PI/180);
+        drawHand(ctx, minute, radius * 0.6, radius * 0.04, "blue");
+
+        second = (((second-15)*6 + 360) % 360) * Math.PI/180;
+        drawHand(ctx, second, radius * 0.75, radius * 0.03, "red");
+    }
+
+    function drawHand(ctx, angle, length, width, color) {
+        ctx.beginPath();
+        ctx.lineWidth = width;
+        ctx.lineCap = "round";
+        ctx.moveTo(0,0);
+        ctx.rotate(angle);
+        ctx.lineTo(length, 0);
+        ctx.strokeStyle = color;
+        ctx.stroke();
+        ctx.rotate(-angle);
+    }
+
+    var canvas2 = document.createElement('canvas');
+    canvas2.setAttribute('width', 1000);
+    canvas2.setAttribute('height', 1000);
+    if (canvas2.getContext) {
+        var ctx = canvas2.getContext("2d");
+        drawCould(ctx);
+    }
+    function drawCould(ctx) {
+        var width = 5;
+        ctx.beginPath();
+        ctx.lineWidth = width;
+        ctx.lineCap = "round";
+        ctx.moveTo(325, 405);
+        ctx.bezierCurveTo(295,370, 365, 330, 395, 370);
+        ctx.moveTo(395, 370);
+        ctx.bezierCurveTo(395+100,370-15, 415 + 40, 430 + 25, 415, 430);
+        ctx.moveTo(415, 430);
+        ctx.bezierCurveTo(415+10,430+25, 350+25, 445+35, 350, 445);
+        ctx.moveTo(350, 445);
+        ctx.bezierCurveTo(350-35,445+15, 325-30, 405+5, 325, 405);
+        ctx.stroke();
+
+        ctx.moveTo(460, 415);
+        ctx.bezierCurveTo(460+30,415-5, 480+15, 440-10, 480, 440);
+        ctx.moveTo(480, 440);
+        ctx.bezierCurveTo(480+40,440+5, 450+20, 470+20, 450, 470);
+        ctx.moveTo(450, 470);
+        ctx.bezierCurveTo(450-25,470+15, 385+15, 465+15, 385, 465);
+        ctx.stroke();
+
+        ctx.moveTo(335, 390);
+        ctx.lineTo(345, 400);
+        ctx.lineTo(365, 390);
+        ctx.stroke();
+
+        ctx.moveTo(400, 385);
+        ctx.lineTo(415, 395);
+        ctx.lineTo(435, 385);
+        ctx.stroke();
+        
+        ctx.moveTo(355, 415);
+        ctx.arc(355, 415, 2, 0, 2* Math.PI);
+        ctx.stroke();
+
+        ctx.moveTo(415, 415);
+        ctx.arc(415, 415, 2, 0, 2* Math.PI);
+        ctx.stroke();
+
+        ctx.moveTo(365, 440);
+        ctx.lineTo(385, 430);
+        ctx.lineTo(400, 440);
+        ctx.stroke();
+
+        ctx.moveTo(430, 442);
+        ctx.arc(430, 442, 2, 0, 2* Math.PI);
+        ctx.stroke();
+
+        ctx.moveTo(460, 442);
+        ctx.arc(460, 442, 2, 0, 2* Math.PI);
+        ctx.stroke();
+
+        ctx.moveTo(445, 460);
+        ctx.arc(445, 460, 2, 0, 2* Math.PI);
+        ctx.stroke();
+
+    }
+    document.body.appendChild(canvas2);
+    </script>
+</html>
