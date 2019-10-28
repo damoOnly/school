@@ -1,7 +1,7 @@
 var areaHeight = 500;
 var areaWidth = 500;
 
-function draw(data) {
+export function draw(data, container) {
     var axis_x_length = 400;
     var axis_y_length = 400;
     var pillarsWidth = 20;
@@ -25,7 +25,7 @@ function draw(data) {
         draw_pillars(item.x, item.y, item.width, item.height, pillarsColor, svg);
     });
     areaDiv.appendChild(svg);
-    document.body.appendChild(areaDiv);
+    container.appendChild(areaDiv);
 }
 
 function draw_axis(svg, x_length, y_length, zerox, zeroy, color) {
@@ -69,6 +69,4 @@ function calc_pillars(data, pro, zerox, zeroy, width, interval) {
     return result;
 }
 
-var list = [120, 100, 140, 160, 180, 185, 190, 210, 230, 245, 255, 270];
-draw(list);
 

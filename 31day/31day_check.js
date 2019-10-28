@@ -1,10 +1,13 @@
-import {region, products, sourceData} from './31day_data';
-import {renderTable} from './31day_table';
+import { sourceData } from './31day_data';
 
-export function initCheckList(id, list) {
-    document.getElementById(id).innerHTML = '';
-    createCheckAll(id);
-    createCheckList(id, list);
+var checkCallBack = null;
+export function initCheckList(list, callBack) {
+    list.forEach(function (item) {
+        document.getElementById(item.id).innerHTML = '';
+        createCheckAll(item.id);
+        createCheckList(item.id, item.data);
+    });
+    checkCallBack = callBack;
 }
 
 function createCheckList(id, list) {
@@ -82,15 +85,9 @@ function testMouseUp(e) {
 }
 
 function onCheckChanged() {
-    renderTable(filterData(), GetOrders());
-}
-
-function filterData() {
-    var pstr = getCheckedTxt();
-    return sourceData.filter(function (s) {
-        return pstr.indexOf(s.region) > -1 &&
-        pstr.indexOf(s.product) > -1;
-    });
+    if (checkCallBack) {
+        checkCallBack(getCheckedTxt(), GetOrders());
+    }
 }
 
 function getCheckedTxt() {

@@ -1,0 +1,24 @@
+<html>
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript">
+            HTMLCollection.prototype.forEach = function (callback) {
+                [].slice.call(this).forEach(callback);
+            };
+        </script>
+        <style type="text/css">
+            #draw_wrapper {
+                display: flex;
+            }
+        </style>
+</head>
+
+<body>
+    <div id="region_wrapper"></div>
+    <div id="produc_wrapper"></div>
+    <div id="draw_wrapper"></div>
+    <div id="table-wrapper"></div>
+</body>
+<script src="./bundle.js" type="text/javascript"></script>
+</html>

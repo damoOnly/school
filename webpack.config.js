@@ -1,9 +1,9 @@
 const path = require('path');
 
 module.exports = {
-    entry: './31day/31day.js',
+    entry: './34day/34day.js',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, '31day')
+        path: path.resolve(__dirname, '34day')
     }
 };
