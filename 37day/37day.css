@@ -1,0 +1,24 @@
+.inputError {
+    border-color: red;
+}
+
+table {
+    width: 100%;
+}
+
+.tdContainer {
+    display: flex;
+    overflow: hidden;
+}
+
+.inputWrapper input {
+    width: 100%;
+}
+
+.sale {
+    width: 7.5%;
+}
+
+.sale:not(.ifEdit):hover::after {
+    content: 'edit';
+}

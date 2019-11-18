@@ -32,6 +32,7 @@ function renderTable(data, orders, callBack) {
     wrapper.innerHTML = "";
     wrapper.appendChild(table);
     tableOnMouseOut();
+    document.onclick = documentOnClick;
 }
 
 function addHeader(table, orders, headers) {
@@ -101,6 +102,7 @@ function addContentByGroup(table, orders, data) {
                 td.setAttribute("class", "sale");
                 td.setAttribute("data-id", g[i].index);
                 td.setAttribute("data-index", index);
+                td.onclick = tdOnClick;
                 tr.appendChild(td);
             });
             table.appendChild(tr);
@@ -129,45 +131,105 @@ function tableOnMouseOut() {
     }
 }
 
-function tdOnClick() {
+function tdOnClick(e) {
+    // e.stopPropagation();
+    if (this.getAttribute("ifEdit") === "1") {
+        return false;
+    }
+    inputCancelData(e);
     var width = this.clientWidth;
     var height = this.clientHeight;
     var value = this.innerHTML;
-    var ele = document.createElement("input");
-    ele.setAttribute("type", "text");
-    ele.setAttribute("origin", value);
-    ele.value = value;
-    ele.style = `width:${width}px;height:${height}px;`;
-    this.appendChild(ele);
+    this.innerHTML = "";
+    this.setAttribute("ifEdit", "1");
+    this.setAttribute("class", "sale ifEdit");
+    var container = document.createElement("div");
+    container.setAttribute("class", "tdContainer");
+    container.id = "tdContainer";
+    container.style = `width:${width}px;`;
+
+
+    var input = document.createElement("input");
+    input.setAttribute("type", "text");
+    input.setAttribute("origin", value);
+    input.id = "tdInput";
+    input.value = value;
+    input.oninput = inputOninput;
+    input.onkeydown = inputOnKeydown;
+
+    var inputWrapper = document.createElement("div");
+    inputWrapper.setAttribute("class", "inputWrapper");
+    inputWrapper.appendChild(input);
+    container.appendChild(inputWrapper);
 
     var options = document.createElement("div");
     options.setAttribute("class", "options");
     var ok = document.createElement("span");
+    ok.innerText = "OK";
+    ok.onclick = okOnClick;
     var cancel = document.createElement("span");
+    cancel.innerText = "Cancel";
+    cancel.onclick = cancelOnClick;
     options.appendChild(ok);
     options.appendChild(cancel);
-    this.appendChild(options);
+    container.appendChild(options);
+
+    this.appendChild(container);
+    return false;
 }
 
-function okOnClick() {
-    var input = this.parentNode.previousSibing;    
+function okOnClick(ev) { 
+    inputChangeData(ev);
+}
+
+function cancelOnClick(ev) {
+    inputCancelData(ev);
+}
+
+function documentOnClick(ev) {
+    inputCancelData(ev);
+}
+
+function inputOninput() {
+    this.setAttribute("class", "");
+}
+
+function inputOnKeydown(e) {
+    if (e.keyCode === 13) {
+        inputChangeData(e);
+    } else if (e.keyCode === 27) {
+        inputCancelData(e);
+    }
+}
+
+function inputChangeData(ev) {    
+    var input = document.getElementById("tdInput");
     var value = parseInt(input.value);
     if (isNaN(value)) {
         input.setAttribute("class", "inputError");
-        return;
+        return false;
     }
-    var td = this.parentNode.parentNode;
+    var td = document.getElementById("tdContainer").parentNode;
     var id = parseInt(td.getAttribute("data-id"));
     var index = parseInt(td.getAttribute("data-index"));
-    onChangeData(id, index, value);
+    changeData[id].sale[index] = value;
     td.innerHTML = value;
+    td.setAttribute("ifEdit", "0");
+    td.setAttribute("class", "sale");
+    ev.stopPropagation();
+    return false;
 }
 
-function cancelClick() {
-    var input = this.parentNode.previousSibing;
-    var td = this.parentNode.parentNode;
-}
+function inputCancelData(ev) {
+    var input = document.getElementById("tdInput");
+    if (input) {
+        var td = document.getElementById("tdContainer").parentNode;
+        var origin = input.getAttribute("origin");
+        td.innerHTML = origin;
+        td.setAttribute("ifEdit", "0");
+        td.setAttribute("class", "sale");
+    }    
 
-function onChangeData(id, index, value) {
-    changeData[id].sale[index] = parseInt(value);
+    ev.stopPropagation();
+    return false;
 }
