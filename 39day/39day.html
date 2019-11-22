@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+
+        function parseQuery(url) {
+            var queryObj = {};
+            var reg = /[#&]([^=&]+)=([^&]*)/g;
+            var querys = url.match(reg);
+            if (querys) {
+                for (var i in querys) {
+                    var query = querys[i].split('=');
+                    var key = query[0].substr(1),
+                        value = query[1];
+                    queryObj[key] ? queryObj[key] = [].concat(queryObj[key], value) : queryObj[key] = value;
+                }
+            }
+            return queryObj;
+        }
+        function getHash() {
+            return parseQuery(window.location.hash);
+        }
+
+        function renderCont() {
+            document.getElementById('contABC').innerHTML = getHash().a;
+            document.getElementById('contDEF').innerHTML = getHash().b;
+        }
+
+        function onClick() {
+            pushState(this);
+        }
+
+        function pushHash(button) {
+            var tempStr = "#a=&b=";
+            if (!!window.location.hash) {
+                tempStr = window.location.hash
+            }
+            switch (button.id) {
+                case "a":
+                case "b":
+                case "c":
+                    tempStr = tempStr.replace(/a=([^&]*)/gi, `a=${button.innerHTML}`);
+                    break;
+                case "d":
+                case "e":
+                case "f":
+                    tempStr = tempStr.replace(/b=([^&]*)/gi, `b=${button.innerHTML}`);
+
+                    break;
+            }
+            window.location.hash = tempStr;
+        }
+
+        function pushState(button) {
+            var obj = {};
+            switch (button.id) {
+                case "a":
+                case "b":
+                case "c":
+                    obj.a = button.innerHTML;
+                    break;
+                case "d":
+                case "e":
+                case "f":
+                    obj.b = button.innerHTML;
+                    break;
+            }
+            history.replaceState(obj, "test page", window.location.href);
+        }
+
+        // window.onhashchange = renderCont;
+        window.onload = function () {
+            // renderCont();
+            var buts = document.getElementsByTagName("button");
+            for (var i = 0; i < buts.length; i++) {
+                buts[i].onclick = onClick;
+            }
+        }
+        window.onpopstate = function (e) {
+            const state = e.state;
+            document.getElementById('contABC').innerHTML = state.a;
+            document.getElementById('contDEF').innerHTML = state.b;
+        }
+    </script>
+</head>
+
+<body>
+    <button id="a">A</button>
+    <button id="b">B</button>
+    <button id="c">C</button>
+    <button id="d">D</button>
+    <button id="e">E</button>
+    <button id="f">F</button>
+    <div id="contABC"></div>
+    <div id="contDEF"></div>
+</body>
+
+</html>
