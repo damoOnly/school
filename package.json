@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js",
-    "44": "node 44day/44day.js"
+    "47": "node 47day/47day.js"
   },
   "repository": {
     "type": "git",
