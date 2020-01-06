@@ -1,0 +1,4 @@
+rollup 打包 less
+1、和访客端整体架构差不多，打包用的是webpack, css module解决方案
+2、访客端和客服的连接通过chatserver中转完成，使用https协议短连接，通过不同的心跳模式进行消息的转发。
+ chatserver和数据库用的是mq分发技术。
