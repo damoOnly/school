@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-11T09:57:02.102Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" etag="52_peZl2qi-kr_zqLQ0l" version="14.9.5" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-08-11T11:59:13.873Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" etag="dEnuTM7HN1iEvrBgV9yK" version="14.9.5" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="render调用关系">
     <mxGraphModel dx="2214" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -183,11 +183,26 @@
         <mxCell id="AlA6Ald838iOkYPxVXd4-7" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;beginWork()&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="AlA6Ald838iOkYPxVXd4-1" vertex="1">
           <mxGeometry x="160" y="280" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="kEFKVfut56w_lZ_6jNL_-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="AlA6Ald838iOkYPxVXd4-1" source="AlA6Ald838iOkYPxVXd4-9" target="kEFKVfut56w_lZ_6jNL_-2">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="kEFKVfut56w_lZ_6jNL_-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="AlA6Ald838iOkYPxVXd4-1" source="AlA6Ald838iOkYPxVXd4-9" target="kEFKVfut56w_lZ_6jNL_-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="940" y="320" />
+              <mxPoint x="940" y="400" />
+              <mxPoint x="1010" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kEFKVfut56w_lZ_6jNL_-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="AlA6Ald838iOkYPxVXd4-1" source="AlA6Ald838iOkYPxVXd4-9" target="kEFKVfut56w_lZ_6jNL_-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="940" y="320" />
+              <mxPoint x="940" y="400" />
+              <mxPoint x="660" y="400" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="AlA6Ald838iOkYPxVXd4-9" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;completeUnitOfWork()&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="AlA6Ald838iOkYPxVXd4-1" vertex="1">
-          <mxGeometry x="600" y="281" width="160" height="40" as="geometry" />
+          <mxGeometry x="870" y="280" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="AlA6Ald838iOkYPxVXd4-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="AlA6Ald838iOkYPxVXd4-1" source="AlA6Ald838iOkYPxVXd4-12" target="AlA6Ald838iOkYPxVXd4-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -277,16 +292,45 @@
         <mxCell id="AlA6Ald838iOkYPxVXd4-37" value="&lt;h1&gt;diff算法&lt;/h1&gt;&lt;div&gt;用于构建Fiber树，最终会返回子Fiber节点为next，注意如果是子Fiber是一个数组是返回的第一个子Fiber，因为是单向链表的方式&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="AlA6Ald838iOkYPxVXd4-1" vertex="1">
           <mxGeometry x="125" y="1080" width="190" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="kEFKVfut56w_lZ_6jNL_-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="AlA6Ald838iOkYPxVXd4-1" source="kEFKVfut56w_lZ_6jNL_-2" target="AlA6Ald838iOkYPxVXd4-3">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="810" y="400" />
-              <mxPoint x="810" y="190" />
-            </Array>
+        <mxCell id="kEFKVfut56w_lZ_6jNL_-2" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #4fc1ff&quot;&gt;siblingFiber !== null&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div style=&quot;line-height: 18px&quot;&gt;&lt;span style=&quot;color: #4fc1ff&quot;&gt;returnFiber !== null&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="AlA6Ald838iOkYPxVXd4-1">
+          <mxGeometry x="920" y="442.5" width="180" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="kEFKVfut56w_lZ_6jNL_-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="AlA6Ald838iOkYPxVXd4-1" source="kEFKVfut56w_lZ_6jNL_-5" target="kEFKVfut56w_lZ_6jNL_-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kEFKVfut56w_lZ_6jNL_-5" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;completeWork()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;next = null&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="AlA6Ald838iOkYPxVXd4-1">
+          <mxGeometry x="600" y="442.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kEFKVfut56w_lZ_6jNL_-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="AlA6Ald838iOkYPxVXd4-1" source="kEFKVfut56w_lZ_6jNL_-7" target="kEFKVfut56w_lZ_6jNL_-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kEFKVfut56w_lZ_6jNL_-7" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #4fc1ff&quot;&gt;HostComponent&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="AlA6Ald838iOkYPxVXd4-1">
+          <mxGeometry x="600" y="550" width="120" height="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="kEFKVfut56w_lZ_6jNL_-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="AlA6Ald838iOkYPxVXd4-1" source="kEFKVfut56w_lZ_6jNL_-9" target="kEFKVfut56w_lZ_6jNL_-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kEFKVfut56w_lZ_6jNL_-13" value="Y&amp;nbsp; update" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="kEFKVfut56w_lZ_6jNL_-12">
+          <mxGeometry x="-0.0705" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kEFKVfut56w_lZ_6jNL_-2" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #4fc1ff&quot;&gt;siblingFiber !== null&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div style=&quot;line-height: 18px&quot;&gt;&lt;span style=&quot;color: #4fc1ff&quot;&gt;returnFiber !== null&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="AlA6Ald838iOkYPxVXd4-1">
-          <mxGeometry x="590" y="370" width="180" height="59" as="geometry" />
+        <mxCell id="kEFKVfut56w_lZ_6jNL_-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="AlA6Ald838iOkYPxVXd4-1" source="kEFKVfut56w_lZ_6jNL_-9" target="kEFKVfut56w_lZ_6jNL_-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kEFKVfut56w_lZ_6jNL_-16" value="N mount" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="kEFKVfut56w_lZ_6jNL_-15">
+          <mxGeometry x="0.3081" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kEFKVfut56w_lZ_6jNL_-9" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #9cdcfe&quot;&gt;current&lt;/span&gt; !== &lt;span style=&quot;color: #569cd6&quot;&gt;null&lt;/span&gt;&amp;nbsp;&amp;amp;&amp;amp;&lt;/div&gt;&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&amp;nbsp;&lt;span style=&quot;color: #9cdcfe&quot;&gt;workInProgress&lt;/span&gt;.&lt;span style=&quot;color: #9cdcfe&quot;&gt;stateNode&lt;/span&gt; != &lt;span style=&quot;color: #569cd6&quot;&gt;null&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="AlA6Ald838iOkYPxVXd4-1">
+          <mxGeometry x="660" y="650" width="320" height="118.75" as="geometry" />
+        </mxCell>
+        <mxCell id="kEFKVfut56w_lZ_6jNL_-11" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;updateHostComponent()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div style=&quot;font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #9cdcfe&quot;&gt;workInProgress&lt;/span&gt;.&lt;span style=&quot;color: #dcdcaa&quot;&gt;updateQueue&lt;/span&gt; = &lt;span style=&quot;color: #9cdcfe&quot;&gt;updatePayload&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #9cdcfe&quot;&gt;updatePayload是props列表数组，偶数行是key，奇数行是value&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="AlA6Ald838iOkYPxVXd4-1">
+          <mxGeometry x="560" y="890.01" width="200" height="119.99" as="geometry" />
+        </mxCell>
+        <mxCell id="kEFKVfut56w_lZ_6jNL_-14" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;createInstance()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div style=&quot;line-height: 18px&quot;&gt;&lt;span style=&quot;color: #9cdcfe&quot;&gt;workInProgress&lt;/span&gt;.&lt;span style=&quot;color: #9cdcfe&quot;&gt;stateNode&lt;/span&gt; = &lt;span style=&quot;color: #4fc1ff&quot;&gt;instance&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 18px&quot;&gt;&lt;span style=&quot;color: #4fc1ff&quot;&gt;创建Dom元素&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="AlA6Ald838iOkYPxVXd4-1">
+          <mxGeometry x="950" y="910" width="190" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
