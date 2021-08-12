@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-12T08:01:45.622Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" etag="8WwEPXsCGQk_B1pJ8Hn_" version="14.9.6" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-08-12T09:05:49.801Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" etag="phQwiDELeDIT5zWd14yr" version="14.9.6" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="render调用关系">
     <mxGraphModel dx="2214" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -429,8 +429,11 @@
         <mxCell id="MOWOSOotbXn6Sawl7a4u-10" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;commitMutationEffects_begin()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;font color=&quot;#dcdcaa&quot;&gt;同样的深度遍历算法&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="Zq1tdPowm7dEECKFwPrk-1">
           <mxGeometry x="505" y="235" width="225" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="pSaUIo1hpF13rcrJDB5l-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Zq1tdPowm7dEECKFwPrk-1" source="MOWOSOotbXn6Sawl7a4u-12" target="pSaUIo1hpF13rcrJDB5l-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="MOWOSOotbXn6Sawl7a4u-12" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;commitDeletion()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;暂时不清楚干了什么&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="Zq1tdPowm7dEECKFwPrk-1">
-          <mxGeometry x="862.5" y="235" width="120" height="60" as="geometry" />
+          <mxGeometry x="1654" y="235" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="MOWOSOotbXn6Sawl7a4u-19" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Zq1tdPowm7dEECKFwPrk-1" source="MOWOSOotbXn6Sawl7a4u-14" target="MOWOSOotbXn6Sawl7a4u-18">
           <mxGeometry relative="1" as="geometry" />
@@ -552,6 +555,27 @@
         </mxCell>
         <mxCell id="pSaUIo1hpF13rcrJDB5l-15" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;insertInContainerBefore()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div style=&quot;font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;appendChildToContainer()&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="Zq1tdPowm7dEECKFwPrk-1">
           <mxGeometry x="1284.68" y="930" width="196.88" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pSaUIo1hpF13rcrJDB5l-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Zq1tdPowm7dEECKFwPrk-1" source="pSaUIo1hpF13rcrJDB5l-17" target="pSaUIo1hpF13rcrJDB5l-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pSaUIo1hpF13rcrJDB5l-17" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;unmountHostComponents()&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="Zq1tdPowm7dEECKFwPrk-1">
+          <mxGeometry x="1621" y="355" width="186" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="pSaUIo1hpF13rcrJDB5l-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Zq1tdPowm7dEECKFwPrk-1" source="pSaUIo1hpF13rcrJDB5l-19" target="pSaUIo1hpF13rcrJDB5l-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pSaUIo1hpF13rcrJDB5l-19" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;commitUnmount()&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="Zq1tdPowm7dEECKFwPrk-1">
+          <mxGeometry x="1654" y="415" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pSaUIo1hpF13rcrJDB5l-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Zq1tdPowm7dEECKFwPrk-1" source="pSaUIo1hpF13rcrJDB5l-21" target="pSaUIo1hpF13rcrJDB5l-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pSaUIo1hpF13rcrJDB5l-21" value="根据不同的tag调用对应的函数" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" vertex="1" parent="Zq1tdPowm7dEECKFwPrk-1">
+          <mxGeometry x="1654" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pSaUIo1hpF13rcrJDB5l-23" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #4fc1ff&quot;&gt;FunctionComponent&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div style=&quot;color: rgb(212 , 212 , 212) ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #4fc1ff&quot;&gt;destroy()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 18px&quot;&gt;&lt;font color=&quot;#4fc1ff&quot;&gt;调用effect和layouteffect的销毁函数&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="Zq1tdPowm7dEECKFwPrk-1">
+          <mxGeometry x="1530" y="620" width="210" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
