@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-13T02:06:02.684Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" etag="vshpXNOzS-y_qHwo4pay" version="14.9.6" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-08-13T02:31:47.911Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" etag="E2xn1M8CTTF8U_24CVc4" version="14.9.6" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="render调用关系">
     <mxGraphModel dx="2214" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -642,6 +642,9 @@
         <mxCell id="IAcjjt6No55TNemvkhyN-14" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="Zq1tdPowm7dEECKFwPrk-1" source="IAcjjt6No55TNemvkhyN-11" target="IAcjjt6No55TNemvkhyN-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="IAcjjt6No55TNemvkhyN-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Zq1tdPowm7dEECKFwPrk-1" source="IAcjjt6No55TNemvkhyN-11" target="IAcjjt6No55TNemvkhyN-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="IAcjjt6No55TNemvkhyN-11" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;commitLayoutEffectOnFiber()&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="Zq1tdPowm7dEECKFwPrk-1">
           <mxGeometry x="2567.5" y="500" width="295" height="60" as="geometry" />
         </mxCell>
@@ -654,8 +657,8 @@
         <mxCell id="IAcjjt6No55TNemvkhyN-13" value="根据不同的tag调用不同的方法" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="Zq1tdPowm7dEECKFwPrk-1">
           <mxGeometry x="2632.5" y="600" width="165" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="IAcjjt6No55TNemvkhyN-15" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #4fc1ff&quot;&gt;FunctionComponent&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div style=&quot;line-height: 18px&quot;&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;commitHookEffectListMount()&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="Zq1tdPowm7dEECKFwPrk-1">
-          <mxGeometry x="2407.5" y="730" width="225" height="60" as="geometry" />
+        <mxCell id="IAcjjt6No55TNemvkhyN-15" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #4fc1ff&quot;&gt;FunctionComponent&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div style=&quot;color: rgb(212 , 212 , 212) ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;commitHookEffectListMount()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 18px&quot;&gt;&lt;font color=&quot;#dcdcaa&quot;&gt;执行effect和layoutEffect方法，&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 18px&quot;&gt;&lt;font color=&quot;#dcdcaa&quot;&gt;并创建销毁函数&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="Zq1tdPowm7dEECKFwPrk-1">
+          <mxGeometry x="2407.5" y="730" width="225" height="80" as="geometry" />
         </mxCell>
         <mxCell id="IAcjjt6No55TNemvkhyN-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Zq1tdPowm7dEECKFwPrk-1" source="IAcjjt6No55TNemvkhyN-17" target="IAcjjt6No55TNemvkhyN-18">
           <mxGeometry relative="1" as="geometry" />
@@ -669,8 +672,11 @@
         <mxCell id="IAcjjt6No55TNemvkhyN-18" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;componentDidUpdate()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: rgb(220 , 220 , 170)&quot;&gt;componentDidMount()&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="Zq1tdPowm7dEECKFwPrk-1">
           <mxGeometry x="2650" y="840" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="IAcjjt6No55TNemvkhyN-21" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;commitUpdateQueue()&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="Zq1tdPowm7dEECKFwPrk-1">
+        <mxCell id="IAcjjt6No55TNemvkhyN-21" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;commitUpdateQueue()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;这里为什么也有effects&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="Zq1tdPowm7dEECKFwPrk-1">
           <mxGeometry x="2870" y="840" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IAcjjt6No55TNemvkhyN-23" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;commitAttachRef()&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="Zq1tdPowm7dEECKFwPrk-1">
+          <mxGeometry x="3030" y="500" width="140" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
