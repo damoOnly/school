@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-20T01:11:56.398Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="p7cPcWc5DsJWhF8V3yiD" version="14.9.8" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-12-24T01:59:20.145Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="ibi1myIwx_4MWpQk1FTb" version="14.9.8" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="render调用关系">
     <mxGraphModel dx="2214" dy="1938" grid="1" gridSize="12" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -734,6 +734,83 @@
         </mxCell>
         <mxCell id="EvjDM88Z0q_crciiN5se-3" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;commitPassiveMountEffects()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: rgb(79 , 193 , 255)&quot;&gt;HookPassive&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;span style=&quot;color: rgb(79 , 193 , 255)&quot;&gt;调用effects的回调函数&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="Zq1tdPowm7dEECKFwPrk-1">
           <mxGeometry x="-695" y="390" width="225" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="egsbV2GT3ubahYQyzg_t" name="Page-4">
+    <mxGraphModel dx="1387" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="Wd-dyiGqnPqUEjWA502v-0" />
+        <mxCell id="Wd-dyiGqnPqUEjWA502v-1" parent="Wd-dyiGqnPqUEjWA502v-0" />
+        <mxCell id="Wd-dyiGqnPqUEjWA502v-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Wd-dyiGqnPqUEjWA502v-1" source="Wd-dyiGqnPqUEjWA502v-2" target="Wd-dyiGqnPqUEjWA502v-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wd-dyiGqnPqUEjWA502v-2" value="login" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Wd-dyiGqnPqUEjWA502v-1">
+          <mxGeometry x="40" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Wd-dyiGqnPqUEjWA502v-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Wd-dyiGqnPqUEjWA502v-1" source="Wd-dyiGqnPqUEjWA502v-3" target="Wd-dyiGqnPqUEjWA502v-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wd-dyiGqnPqUEjWA502v-3" value="本地&lt;span style=&quot;color: rgb(23 , 43 , 77) ; font-family: , &amp;#34;system-ui&amp;#34; , &amp;#34;segoe ui&amp;#34; , &amp;#34;roboto&amp;#34; , &amp;#34;oxygen&amp;#34; , &amp;#34;ubuntu&amp;#34; , &amp;#34;fira sans&amp;#34; , &amp;#34;droid sans&amp;#34; , &amp;#34;helvetica neue&amp;#34; , sans-serif ; font-size: 14px ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;auth/jump路由&lt;br&gt;没有token会通过tokenkey获取token&lt;br&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="Wd-dyiGqnPqUEjWA502v-1">
+          <mxGeometry x="190" y="205" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Wd-dyiGqnPqUEjWA502v-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Wd-dyiGqnPqUEjWA502v-1" source="Wd-dyiGqnPqUEjWA502v-5" target="Wd-dyiGqnPqUEjWA502v-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wd-dyiGqnPqUEjWA502v-5" value="设置token和userDomain" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="Wd-dyiGqnPqUEjWA502v-1">
+          <mxGeometry x="354" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Wd-dyiGqnPqUEjWA502v-10" value="Y&lt;br&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Wd-dyiGqnPqUEjWA502v-1" source="Wd-dyiGqnPqUEjWA502v-7" target="Wd-dyiGqnPqUEjWA502v-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="165" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wd-dyiGqnPqUEjWA502v-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Wd-dyiGqnPqUEjWA502v-1" source="Wd-dyiGqnPqUEjWA502v-7" target="Wd-dyiGqnPqUEjWA502v-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="380" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="560" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wd-dyiGqnPqUEjWA502v-13" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Wd-dyiGqnPqUEjWA502v-12">
+          <mxGeometry x="-0.1778" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wd-dyiGqnPqUEjWA502v-7" value="是否同域名" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="Wd-dyiGqnPqUEjWA502v-1">
+          <mxGeometry x="520" y="210" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Wd-dyiGqnPqUEjWA502v-9" value="直接跳转redirect_uri" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Wd-dyiGqnPqUEjWA502v-1">
+          <mxGeometry x="680" y="135" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Wd-dyiGqnPqUEjWA502v-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Wd-dyiGqnPqUEjWA502v-1" source="Wd-dyiGqnPqUEjWA502v-14" target="Wd-dyiGqnPqUEjWA502v-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wd-dyiGqnPqUEjWA502v-20" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Wd-dyiGqnPqUEjWA502v-16">
+          <mxGeometry x="-0.0333" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wd-dyiGqnPqUEjWA502v-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Wd-dyiGqnPqUEjWA502v-1" source="Wd-dyiGqnPqUEjWA502v-14" target="Wd-dyiGqnPqUEjWA502v-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wd-dyiGqnPqUEjWA502v-19" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Wd-dyiGqnPqUEjWA502v-18">
+          <mxGeometry x="-0.3778" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wd-dyiGqnPqUEjWA502v-14" value="是否为sp域名" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="Wd-dyiGqnPqUEjWA502v-1">
+          <mxGeometry x="700" y="270" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Wd-dyiGqnPqUEjWA502v-15" value="跳转对应auth/jump路由" style="whiteSpace=wrap;html=1;" vertex="1" parent="Wd-dyiGqnPqUEjWA502v-1">
+          <mxGeometry x="860" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Wd-dyiGqnPqUEjWA502v-17" value="生成jwt token，&lt;br&gt;跳转sp服务auth/jumpV3路由" style="whiteSpace=wrap;html=1;" vertex="1" parent="Wd-dyiGqnPqUEjWA502v-1">
+          <mxGeometry x="680" y="400" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
