@@ -1,9 +1,53 @@
-<mxfile host="app.diagrams.net" modified="2022-09-17T03:10:18.289Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="3UEkbVWBzIlZXnWKrKRk" version="20.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-17T05:52:30.509Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="0A12aVO3j9knQpCNmAkb" version="20.0.3" type="github">
   <diagram id="P-4nADnmsfr8WvNnNt9t" name="userDomain">
     <mxGraphModel dx="1387" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="EDheGHN0Hk9RA44l3D65-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EDheGHN0Hk9RA44l3D65-1" target="EDheGHN0Hk9RA44l3D65-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDheGHN0Hk9RA44l3D65-1" value="点击登录" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="40" y="130" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EDheGHN0Hk9RA44l3D65-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EDheGHN0Hk9RA44l3D65-2" target="EDheGHN0Hk9RA44l3D65-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDheGHN0Hk9RA44l3D65-2" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 14px; line-height: normal; color: rgb(18, 20, 22); text-align: start;&quot; class=&quot;p1&quot;&gt;初始域名根据域名决定checkNewEquipment/v2&lt;/p&gt;&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 14px; line-height: normal; color: rgb(18, 20, 22); text-align: start;&quot; class=&quot;p1&quot;&gt;调用是否新设备接口，&lt;/p&gt;&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 14px; line-height: normal; color: rgb(18, 20, 22); text-align: start;&quot; class=&quot;p1&quot;&gt;这个接口还能防止套刷账号&lt;/p&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="190" y="81" width="178" height="178" as="geometry" />
+        </mxCell>
+        <mxCell id="EDheGHN0Hk9RA44l3D65-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EDheGHN0Hk9RA44l3D65-4" target="EDheGHN0Hk9RA44l3D65-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDheGHN0Hk9RA44l3D65-4" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 14px; line-height: normal; color: rgb(18, 20, 22); text-align: start;&quot; class=&quot;p1&quot;&gt;还没有完成登录，userDomain存储到sessionStory&lt;/p&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="414" y="109" width="122" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="EDheGHN0Hk9RA44l3D65-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EDheGHN0Hk9RA44l3D65-6" target="EDheGHN0Hk9RA44l3D65-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDheGHN0Hk9RA44l3D65-6" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 14px; line-height: normal; color: rgb(18, 20, 22); text-align: start;&quot; class=&quot;p1&quot;&gt;login/account/v2&lt;/p&gt;&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 14px; line-height: normal; color: rgb(18, 20, 22); text-align: start;&quot; class=&quot;p1&quot;&gt;调用登录接口&lt;/p&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EDheGHN0Hk9RA44l3D65-8" value="userDomain存储到sessonStory" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="851" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EDheGHN0Hk9RA44l3D65-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EDheGHN0Hk9RA44l3D65-10" target="EDheGHN0Hk9RA44l3D65-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDheGHN0Hk9RA44l3D65-16" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="EDheGHN0Hk9RA44l3D65-15">
+          <mxGeometry x="-0.2558" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDheGHN0Hk9RA44l3D65-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EDheGHN0Hk9RA44l3D65-10" target="EDheGHN0Hk9RA44l3D65-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDheGHN0Hk9RA44l3D65-10" value="是否需要滑块验证" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="130" width="63" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EDheGHN0Hk9RA44l3D65-17" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="551.5" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
