@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-26T11:01:36.510Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="xsk4Ja0o7aHF6sonnwe3" version="20.3.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-26T11:03:01.086Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="vo18CSi1tWqnIlY83nLs" version="20.3.6" type="github">
   <diagram id="P-4nADnmsfr8WvNnNt9t" name="userDomain">
     <mxGraphModel dx="2214" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -463,7 +463,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="7pJzd1Vwt1_ZC59aJ7PK-39" value="已登录状态 + 没有isFromLogin" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="250" y="2680" width="80" height="80" as="geometry" />
+          <mxGeometry x="210" y="2660" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="7pJzd1Vwt1_ZC59aJ7PK-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="7pJzd1Vwt1_ZC59aJ7PK-41" target="7pJzd1Vwt1_ZC59aJ7PK-46" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -520,15 +520,18 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7pJzd1Vwt1_ZC59aJ7PK-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="7pJzd1Vwt1_ZC59aJ7PK-59" target="7pJzd1Vwt1_ZC59aJ7PK-62" edge="1">
+        <mxCell id="7pJzd1Vwt1_ZC59aJ7PK-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="290" y="3120" />
+              <mxPoint x="270" y="3040" />
+              <mxPoint x="270" y="3120" />
             </Array>
+            <mxPoint x="271" y="3040" as="sourcePoint" />
+            <mxPoint x="391" y="3120" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="7pJzd1Vwt1_ZC59aJ7PK-59" value="app + account" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="230" y="2960" width="120" height="80" as="geometry" />
+          <mxGeometry x="210" y="2960" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="7pJzd1Vwt1_ZC59aJ7PK-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="7pJzd1Vwt1_ZC59aJ7PK-62" target="7pJzd1Vwt1_ZC59aJ7PK-54" edge="1">
           <mxGeometry relative="1" as="geometry" />
