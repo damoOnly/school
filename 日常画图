@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-29T06:42:57.491Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="jsDwpFoQW5zGmT0NoFLx" version="20.3.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-29T07:45:42.127Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="3xJfhPQTV2dDU3Whvbvx" version="20.3.6" type="github">
   <diagram id="P-4nADnmsfr8WvNnNt9t" name="userDomain">
     <mxGraphModel dx="2214" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -335,8 +335,18 @@
         <mxCell id="7pJzd1Vwt1_ZC59aJ7PK-5" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="7pJzd1Vwt1_ZC59aJ7PK-2" target="7pJzd1Vwt1_ZC59aJ7PK-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="7pJzd1Vwt1_ZC59aJ7PK-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="7pJzd1Vwt1_ZC59aJ7PK-2" target="7pJzd1Vwt1_ZC59aJ7PK-8" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="VsJRe0T4u4omZAndHTy6-205" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="7pJzd1Vwt1_ZC59aJ7PK-2" target="7pJzd1Vwt1_ZC59aJ7PK-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="305" y="1990" />
+              <mxPoint x="900" y="1990" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VsJRe0T4u4omZAndHTy6-206" value="getAppinfo：userDomain&lt;br&gt;cookie：userDomain" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VsJRe0T4u4omZAndHTy6-205">
+          <mxGeometry x="0.0234" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="7pJzd1Vwt1_ZC59aJ7PK-2" value="有applyId？" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="265" y="1850" width="80" height="80" as="geometry" />
@@ -357,22 +367,6 @@
             <Array as="points">
               <mxPoint x="505" y="1850" />
             </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="7pJzd1Vwt1_ZC59aJ7PK-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="7pJzd1Vwt1_ZC59aJ7PK-8" target="7pJzd1Vwt1_ZC59aJ7PK-12" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="7pJzd1Vwt1_ZC59aJ7PK-8" value="验证码输入界面" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="245" y="2020" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="7pJzd1Vwt1_ZC59aJ7PK-10" value="&lt;span style=&quot;color: rgb(18, 20, 22); font-size: 14px; text-align: start;&quot;&gt;取getAppInfo返回的userDomain&lt;/span&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.stored_data;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="40" y="2020" width="150" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="7pJzd1Vwt1_ZC59aJ7PK-11" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.93;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="7pJzd1Vwt1_ZC59aJ7PK-8" target="7pJzd1Vwt1_ZC59aJ7PK-10" edge="1">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="480.63" y="2130" as="sourcePoint" />
-            <mxPoint x="479.38" y="2090" as="targetPoint" />
-            <Array as="points" />
           </mxGeometry>
         </mxCell>
         <mxCell id="7pJzd1Vwt1_ZC59aJ7PK-12" value="填写人工申诉信息" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
