@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-29T02:04:53.237Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="khJ-PMDxgn6KjFgnt3p9" version="20.3.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-29T02:55:07.350Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="BJVquZYU9d81eT9wsr_W" version="20.3.6" type="github">
   <diagram id="P-4nADnmsfr8WvNnNt9t" name="userDomain">
     <mxGraphModel dx="2214" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -835,6 +835,53 @@
         </mxCell>
         <mxCell id="VsJRe0T4u4omZAndHTy6-96" value="用户归属将会是在美国&lt;br&gt;cookie:&amp;nbsp;&lt;span style=&quot;color: rgb(18, 20, 22); font-size: 14px; text-align: start; background-color: rgb(255, 255, 255);&quot;&gt;pre-u1suser&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="208.75" y="4540" width="147.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VsJRe0T4u4omZAndHTy6-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="VsJRe0T4u4omZAndHTy6-100" target="VsJRe0T4u4omZAndHTy6-102">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VsJRe0T4u4omZAndHTy6-99" value="userDomain：&lt;span style=&quot;color: rgb(18, 20, 22); font-size: 14px; text-align: start;&quot;&gt;pre-u1suser&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VsJRe0T4u4omZAndHTy6-98">
+          <mxGeometry x="-0.3" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VsJRe0T4u4omZAndHTy6-100" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 14px; line-height: normal; color: rgb(18, 20, 22); text-align: start;&quot; class=&quot;p1&quot;&gt;https://pre-nauser.pre.webullbroker.com/&lt;span style=&quot;background-color: initial;&quot;&gt;api/user/v1/userInfo/queryUserDomain&lt;/span&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-555" y="4710" width="595" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VsJRe0T4u4omZAndHTy6-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="VsJRe0T4u4omZAndHTy6-102" target="VsJRe0T4u4omZAndHTy6-105">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VsJRe0T4u4omZAndHTy6-102" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 14px; line-height: normal; color: rgb(18, 20, 22); text-align: start;&quot; class=&quot;p1&quot;&gt;https://&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;pre-u1suser&lt;/span&gt;.pre.webullbroker.com/&lt;span style=&quot;background-color: initial;&quot;&gt;api/user/v1/verificationCode/send/v2&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-555" y="4845" width="595" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VsJRe0T4u4omZAndHTy6-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="VsJRe0T4u4omZAndHTy6-105" target="VsJRe0T4u4omZAndHTy6-107">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VsJRe0T4u4omZAndHTy6-105" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 14px; line-height: normal; color: rgb(18, 20, 22); text-align: start;&quot; class=&quot;p1&quot;&gt;https://&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;pre-u1suser&lt;/span&gt;.pre.webullbroker.com/&lt;span style=&quot;background-color: initial;&quot;&gt;api/user/v1/verificationCode/checkCode&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-555" y="4944" width="595" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VsJRe0T4u4omZAndHTy6-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="VsJRe0T4u4omZAndHTy6-107" target="VsJRe0T4u4omZAndHTy6-114">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VsJRe0T4u4omZAndHTy6-107" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 14px; line-height: normal; color: rgb(18, 20, 22); text-align: start;&quot; class=&quot;p1&quot;&gt;https://&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;pre-u1suser&lt;/span&gt;.pre.webullbroker.com/&lt;span style=&quot;background-color: initial;&quot;&gt;api/user/v1/risk/needQuestion/v2&lt;/span&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-555" y="5020" width="595" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VsJRe0T4u4omZAndHTy6-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="VsJRe0T4u4omZAndHTy6-109" target="VsJRe0T4u4omZAndHTy6-111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VsJRe0T4u4omZAndHTy6-109" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 14px; line-height: normal; color: rgb(18, 20, 22); text-align: start;&quot; class=&quot;p1&quot;&gt;https://&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;pre-u1suser&lt;/span&gt;.pre.webullbroker.com/&lt;/p&gt;&lt;span style=&quot;color: rgb(18, 20, 22); font-size: 14px; text-align: start;&quot;&gt;api/user/v1/risk/checkAnswer&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-555" y="5190" width="595" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VsJRe0T4u4omZAndHTy6-111" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 14px; line-height: normal; color: rgb(18, 20, 22); text-align: start;&quot; class=&quot;p1&quot;&gt;https://&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;pre-u1suser&lt;/span&gt;.pre.webullbroker.com/&lt;span style=&quot;background-color: initial;&quot;&gt;api/user/v1/userInfo/resetPwd/v2&lt;/span&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-555" y="5270" width="595" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VsJRe0T4u4omZAndHTy6-113" value="未登录找回登录密码" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-330" y="4640" width="155" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VsJRe0T4u4omZAndHTy6-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="VsJRe0T4u4omZAndHTy6-114" target="VsJRe0T4u4omZAndHTy6-109">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VsJRe0T4u4omZAndHTy6-114" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 14px; line-height: normal; color: rgb(18, 20, 22); text-align: start;&quot; class=&quot;p1&quot;&gt;https://pre-u1suser.pre.webullbroker.com/&lt;span style=&quot;background-color: initial;&quot;&gt;api/user/v1/risk/getSecurityQuestion/v2&lt;/span&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-555" y="5110" width="595" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
