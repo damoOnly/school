@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-12T09:49:55.452Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="5YZ2Hx0AvB_7OwAZ1iUa" version="24.6.5" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2024-07-12T09:57:49.275Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="L4meAWUi3fJndrLiJ0Sg" version="24.6.5" type="github" pages="6">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="render调用关系">
     <mxGraphModel dx="2222" dy="1930" grid="1" gridSize="12" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1315,11 +1315,41 @@
         <mxCell id="P1ew94staZJYjPlmbJHm-29" value="Client Brokerage Account" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="870" y="750" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="P1ew94staZJYjPlmbJHm-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="P1ew94staZJYjPlmbJHm-36" target="P1ew94staZJYjPlmbJHm-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="P1ew94staZJYjPlmbJHm-36" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
           <mxGeometry x="60" y="940" width="200" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="P1ew94staZJYjPlmbJHm-39" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;webull&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="620" y="970" width="180" height="120" as="geometry" />
+        <mxCell id="P1ew94staZJYjPlmbJHm-39" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;webull&lt;/h1&gt;&lt;p&gt;作为服务入口，对客提供相关服务.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="P1ew94staZJYjPlmbJHm-36">
+          <mxGeometry x="10" y="5" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="P1ew94staZJYjPlmbJHm-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="P1ew94staZJYjPlmbJHm-40" target="P1ew94staZJYjPlmbJHm-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="P1ew94staZJYjPlmbJHm-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="P1ew94staZJYjPlmbJHm-40" target="P1ew94staZJYjPlmbJHm-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="P1ew94staZJYjPlmbJHm-40" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1110" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="P1ew94staZJYjPlmbJHm-41" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;color: rgb(25,25,25);&quot;&gt;&lt;span style=&quot;color: rgb(23,43,77);&quot;&gt;Synctera&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/h1&gt;&lt;p&gt;BaaS服务提供商，简化银行接口，处理银行类业务账务处理，作为webull和银行的桥梁&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="P1ew94staZJYjPlmbJHm-40">
+          <mxGeometry x="10" y="5" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="P1ew94staZJYjPlmbJHm-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="P1ew94staZJYjPlmbJHm-42" target="P1ew94staZJYjPlmbJHm-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="P1ew94staZJYjPlmbJHm-42" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1270" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="P1ew94staZJYjPlmbJHm-43" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;color: rgb(25,25,25);&quot;&gt;Stearns Bank&lt;/span&gt;&lt;br&gt;&lt;/h1&gt;&lt;p&gt;提供最终账户以及卡能力.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="P1ew94staZJYjPlmbJHm-42">
+          <mxGeometry x="10" y="10" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="P1ew94staZJYjPlmbJHm-49" value="第三方借贷等衍生品服务" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="414" y="1145" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="P1ew94staZJYjPlmbJHm-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="P1ew94staZJYjPlmbJHm-41" target="P1ew94staZJYjPlmbJHm-49">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
